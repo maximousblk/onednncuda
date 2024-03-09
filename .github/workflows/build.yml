@@ -1,6 +1,6 @@
 name: Build
 
-on: [repository_dispatch]
+on: [wworkflow_dispatch]
 
 jobs:
   build:
