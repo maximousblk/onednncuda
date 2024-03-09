@@ -11,7 +11,7 @@ jobs:
         with:
           repository: intel/llvm
           ref: sycl
-          modules: recursive
+          submodules: recursive
 
       - uses: lukka/get-cmake@latest
       - uses: Jimver/cuda-toolkit@master
