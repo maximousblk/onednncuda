@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4.1.1
         with:
           repository: intel/llvm
-          ref: sycl
+          ref: 2023-WW27
           submodules: recursive
 
       - uses: lukka/get-cmake@latest
