@@ -13,6 +13,9 @@ jobs:
           ref: 2023-WW27
           submodules: recursive
 
+      - uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
       - uses: lukka/get-cmake@latest
       - uses: Jimver/cuda-toolkit@v0.2.14
       - run: python ./buildbot/configure.py --cuda -t Release
